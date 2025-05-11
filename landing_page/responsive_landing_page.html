@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fictional Product Landing Page</title>
+  <style>
+    /* Reset & base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    header, main, footer { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* Hero Section */
+    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 0; background: #f5faff; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; color: #555; }
+    .btn-primary { background: #0066ff; color: #fff; padding: 12px 30px; border-radius: 4px; font-size: 1rem; }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      /* Prevent any card from forcing a minimum wider than 0 */
+      grid-template-columns: repeat(3, minmax(0, 1fr));  
+      /* Ensure items fill row by row */
+      grid-auto-flow: row;   
+      /* Pin everything to the top of its cell */
+      align-items: start;    
+      gap: 20px;
+      margin: 60px 0;
+    }
+
+    /* Footer */
+    footer { background: #f4f4f4; padding: 20px 0; text-align: center; }
+    .social-links a { margin: 0 10px; font-weight: bold; color: #0066ff; }
+    .copyright { margin-top: 10px; font-size: 0.85rem; color: #777; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .features { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Discover TaskPro</h1>
+    <p>Organize, track, and accomplish your tasks with our intuitive productivity app.</p>
+    <a href="#signup" class="btn-primary">Get Started</a>
+  </header>
+
+  <main>
+    <!-- Features Section -->
+    <section class="features" aria-labelledby="features-heading">
+      
+      <div class="feature">
+        <img src="task-management.png" alt="Manage Tasks Icon" height="90px" width="90px">
+        <h3>Task Management</h3>
+        <p>Easily create, categorize, and prioritize your to-dos in one place.</p>
+      </div>
+      <div class="feature">
+        <img src="calendar sync.png" alt="Calendar Sync Icon">
+        <h3>Calendar Sync</h3>
+        <p>Sync your tasks with Google Calendar or Outlook for seamless planning.</p>
+      </div>
+      <div class="feature">
+        <img src="progrss analytics2.jpg" alt="Analytics Icon" height="80px" width="80px">
+        <h3>Progress Analytics</h3>
+        <p>Visualize your productivity trends with built-in analytics dashboards.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>Email: <a href="mailto:support@taskpro.io">support@taskpro.io</a></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/taskpro" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/taskpro" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/taskpro_app" target="_blank">Twitter</a>
+      </div>
+      <p class="copyright">&copy; 2025 TaskPro. All rights reserved.</p>
+    </section>
+  </footer>
+
+</body>
+</html>
