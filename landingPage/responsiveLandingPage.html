@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fictional Product Landing Page</title>
+  <style>
+    /* Base Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #E0F7FA; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* Container */
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* 1. Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 0;
+      background-color: #0066FF;
+      color: #fff;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; }
+    .btn-cta {
+      background-color: #FF6B6B;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .btn-cta:hover { background-color: #e55a5a; }
+
+    /* 2. Features Section */
+    .features-section { padding: 60px 0; }
+    .features-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #1A1A2E;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature img { width: 60px; height: 60px; margin-bottom: 15px; }
+    .feature h3 { font-size: 1.2rem; margin-bottom: 10px; color: #0066FF; }
+    .feature p { font-size: 0.95rem; color: #666; }
+
+    /* 3. Footer Section */
+    footer {
+      background-color: #f4f4f4;
+      padding: 30px 0;
+    }
+    .footer-content { display: flex; flex-direction: column; align-items: center; }
+    .footer-content p { margin-bottom: 10px; }
+    .social-links a { margin: 0 10px; font-weight: bold; color: #0066FF; }
+    .copyright { margin-top: 15px; font-size: 0.85rem; color: #777; }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Introducing TaskPro</h1>
+      <p>Streamline your productivity with TaskPro—organize, sync, and analyze tasks with ease.</p>
+      <a href="#features" class="btn-cta">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <main class="container features-section" id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="task-management.png" alt="Task Management Icon">
+        <h3>Task Management</h3>
+        <p>Create, categorize, and prioritize tasks in one intuitive dashboard.</p>
+      </div>
+      <div class="feature">
+        <img src="calendar sync.png" alt="Calendar Sync Icon">
+        <h3>Calendar Sync</h3>
+        <p>Seamlessly integrate with Google Calendar and Outlook to keep track of deadlines.</p>
+      </div>
+      <div class="feature">
+        <img src="progrss analytics2.jpg" alt="Progress Analytics Icon">
+        <h3>Progress Analytics</h3>
+        <p>Visualize productivity trends and track your performance over time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <p>Email: <a href="mailto:support@taskpro.io">support@taskpro.io</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/taskpro" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/taskpro_app" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com/taskpro_app" target="_blank">Twitter</a>
+      </div>
+      <p class="copyright">&copy; 2025 TaskPro. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
